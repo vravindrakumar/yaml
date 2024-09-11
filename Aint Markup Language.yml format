@@ -1,0 +1,234 @@
+[8:34 am, 26/7/2024] Cloud Tech Net: YAML:
+
+Aint Markup language
+
+data serialization 
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+1.Key-Value Pairs:
+
+yaml:
+
+name: Rajesh
+age: 37
+
+2. Nested Structures:
+
+yaml:
+
+address:
+  doornumber: 777/a 
+  street: Netaji Street
+  city: Hyderabad
+  state: Telangana
+  pin: 500018
+  
+3. Lists:
+
+yaml:
+
+languages:
+  - python
+  - json
+  - YAML
+  - batch
+  - Powershell
+  
+4. Comments:
+
+#this is a comment
+name: Rajesh #this is an inline comment
+
+5. Multiline Strings:
+
+yaml:
+
+description: |
+  Hi all very good morning 
+  welcome to YAML session
+  
+  
+or
+
+Summary: >
+  Hi all very good morning 
+  welcome to YAML session
+  
+6. Dictonaries:
+
+inline_dictionary: { key1: value1, key2: value2 }
+
+ex:
+
+user: { name: Rajesh, age: 37, city: Hyderabad }
+
+block_dictionary:
+  key1: value1
+  key2: value2 
+  
+  
+ex:
+
+network:
+  ip: 192.168.1.10
+  subnet: 255.255.255.0
+  gateway: 192.168.1.1
+  
+7. Anchors and Aliases
+
+Anchors ('&')
+Aliases ('*')
+
+yaml:
+
+#Define common database setting using an Anchor
+
+common: &common
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  timeout: 5000
+  
+#Development environment settings
+development:
+  database: dev_db
+  <<: *common 
+  
+  
+#Stagging environment settings
+staging:
+  database: staging_db
+  <<: *common 
+  
+#Production environment settings
+production:
+  database: prod_db
+  <<: *common 
+  pool: 15
+  timeout: 10000
+
+
+8. Boolean Values
+
+true and false
+
+yaml:
+
+is_active: true
+is_admin: false
+
+9. Numm values
+
+numm or ~
+
+yaml:
+middle_name: null
+nickname: ~
+
+10. Numbers
+
+yaml:
+
+age: 37
+
+11. Special 
+
+yaml:
+
+server:
+  name: "server name"
+  root_directory: "/var/www/html"
+[8:40 am, 26/7/2024] Cloud Tech Net: Write a YAML script with below information:
+
+Ratan Tata: A Visionary Leader
+Full Name: Ratan Naval Tata
+Born: December 28, 1937
+
+Early Life and Education
+Ratan Tata, a prominent Indian industrialist, was born into the illustrious Tata family. He was raised by his grandmother, Lady Navajbai Tata, after his parents' separation. Ratan Tata attended the Campion School in Mumbai before moving to Cathedral and John Connon School. He later studied at Bishop Cotton School in Shimla and graduated from Riverdale Country School in New York City in 1955. He went on to earn a degree in architecture with a focus on structural engineering from Cornell University in 1962. Following this, he completed the Advanced Management Program at Harvard Business School in 1975.
+
+Business Sectors
+Under Ratan Tata's leadership, the Tata Group expanded its footprint across several industries, including:
+
+Automobiles
+Steel
+Information Technology
+Telecommunications
+Hospitality
+Chemicals
+Power
+Consumer Products
+
+Tata Automobiles: A Legacy on Wheels
+Tata Motors, a key subsidiary of the Tata Group, has established itself as a dominant player in the global automotive industry. The company produces a wide range of vehicles, from passenger cars to commercial trucks, serving various market segments.
+
+Types of Vehicles
+Passenger Cars
+Commercial Vehicles
+Electric Vehicles
+
+
+Passenger Cars
+Models and Fuel Types:
+
+Tata Nano
+Years: 2008 - 2018
+Fuel Type: Petrol
+Tata Indica
+Years: 1998 - 2018
+Fuel Type: Petrol, Diesel
+Tata Zest
+Years: 2014 - Present
+Fuel Type: Petrol, Diesel
+Tata Tiago
+Years: 2016 - Present
+Fuel Type: Petrol, Diesel, Electric
+Tata Tigor
+Years: 2017 - Present
+Fuel Type: Petrol, Diesel, Electric
+Tata Nexon
+Years: 2017 - Present
+Fuel Type: Petrol, Diesel, Electric
+Tata Altroz
+Years: 2020 - Present
+Fuel Type: Petrol, Diesel
+Commercial Vehicles
+Models and Fuel Types:
+
+Tata Ace
+
+Years: 2005 - Present
+Fuel Type: Diesel, Petrol, CNG, Electric
+Tata 407
+
+Years: 1986 - Present
+Fuel Type: Diesel, CNG
+Tata Prima
+
+Years: 2008 - Present
+Fuel Type: Diesel
+Tata Signa
+
+Years: 2016 - Present
+Fuel Type: Diesel
+Tata LPT
+
+Years: 1975 - Present
+Fuel Type: Diesel
+Electric Vehicles (EVs)
+Models and Fuel Types:
+
+Tata Tigor EV
+
+Years: 2017 - Present
+Fuel Type: Electric
+Tata Nexon EV
+
+Years: 2020 - Present
+Fuel Type: Electric
+Tata Tiago EV
+
+Years: 2022 - Present
+Fuel Type: Electric
