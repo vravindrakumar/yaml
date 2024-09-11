@@ -1,27 +1,37 @@
-Difference between a Pod & a Docker Container ?
+1.Kubernets Cluster :
+    -Set of Worker machines (Nodes)
+	
+2.Master Node (Control plane):
+    -API server (server the kubernets API)
+	
+	-ectd ( A Distributed key-value store)
+	
+	-Controller Manager (Runs Controller Processes)
+	
+	-Scheduler (Assings Workloads to Nodes)
+	
 
+3.Worker Node:
+ 
+   -Kubelet  (Primary agent on each mode)
+   
+   -kube-proxy (Network Proxy)
+   
+   -Container Run time (Responsible  for Running containers)
+   -Docker 
+   -Containerd
+   -CRI-O
+   
+4.Additional Components:
+   -Pods :The smallest deployable units in Kubernets
+   
+   
+   -ReplicateSets:Ensure a specified nuumber of pods replicas are running at any
+    one time
 
-Docker Container:
+   Deployments :
 
-1.Conatainer Technology:
+   services:
 
-2.Single Conatainer:
-
-3.Isolation:
-
-4.Lifecycle Management:
-
-5.Networking:
-
-6.Portability:
-
-7.Resource Allocation: 
-
-pod:
-1.Kubernetes Abstraction:
-2.Multiple Conatainers:
-3.Shared Resources:
-4.Atomic unit of Scheduling:
-5.Lifecycle Management:
-6.Networking
-7.Resilience and Replication:
+   ConfigMaps and secrets:   
+  
